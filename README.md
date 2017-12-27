@@ -1,5 +1,5 @@
 # Use_Grottocenter_API
-example of using Grottocenter APIs / Exemples d'utilisation des API de Grottocenter
+Examples of using Grottocenter APIs / Exemples d'utilisation des API de Grottocenter
 
 Use_GC3_API_with_JAVASCRIPT_FR_V2.html
 Il s'agit d'une fenêtre faisant la promotion du site Grottocenter qui affiche le nombre de cavités qui sont accessibles sur le site.
