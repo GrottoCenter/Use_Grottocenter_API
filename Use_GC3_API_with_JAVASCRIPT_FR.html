@@ -1,0 +1,139 @@
+
+<!--This file is part of GrottoCenter.
+
+GrottoCenter is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+GrottoCenter is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with GrottoCenter.  If not, see <http://www.gnu.org/licenses/>.
+
+@copyright Copyright (c) 2017 Alain Louage, Frédéric Urien
+@license http://www.gnu.org/licenses/agpl.txt-->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+
+<head>
+<meta charset="utf-8" />
+</head>
+<body>
+<!--coller cette partie de code dans votre page html-->
+<div style="
+	padding:5px; 
+	background-color:#d7ccc8; 
+	border:4px solid #795548; 
+	-moz-border-radius:9px; 
+	-khtml-border-radius:9px; 
+	-webkit-border-radius:9px; 
+	border-radius:9px;  
+	display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   -ms-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: flex-start;
+   -ms-flex-pack: start;
+   justify-content: flex-start;
+   -webkit-align-content: stretch;
+   -ms-flex-line-pack: stretch;
+   align-content: stretch;
+   -webkit-align-items: flex-start;
+   -ms-flex-align: start;
+   align-items: flex-start;">
+    
+<div style="
+	-webkit-order: 0;
+   -ms-flex-order: 0;
+   order: 0;
+   -webkit-flex: 0 1 auto;
+   -ms-flex: 0 1 auto;
+   flex: 0 1 auto;
+   -webkit-align-self: auto;
+   -ms-flex-item-align: auto;
+   align-self: center;
+">
+		<img src="https://beta.grottocenter.org/images/logo.svg" height="80">
+</div>
+
+ <div style="
+	padding:5px; 
+	background-color:#d7ccc8; 
+	border:0px solid #795548; 
+	-moz-border-radius:9px; 
+	-khtml-border-radius:9px; 
+	-webkit-border-radius:9px; 
+	border-radius:9px;  
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    ">
+    
+<div style="
+	-webkit-order: 0;
+	-ms-flex-order: 0;
+  	order: 0;
+   -webkit-flex: 0 1 auto;
+   -ms-flex: 0 1 auto;
+   flex: 0 1 auto;
+   -webkit-align-self: auto;
+   -ms-flex-item-align: auto;
+   align-self: auo;
+   font-size: 1.2em;
+   color: #795548;
+   ">
+Contribuez &agrave; <a href="beta.grottocenter.org" style="font-size: 1.5em; color: #795548;">Grottocenter</a> la base de donn&eacute;e sp&eacute;l&eacute;o mondiale
+	</div>
+	
+<div style="
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  font-size: 1.2em;
+  color: #795548;
+  margin-top: 12px;
+  ">
+
+D&eacute;j&agrave; <span style="font-size: 1.2em; background: #795548; color: #d7ccc8;"> <span id="demo"></span>   
+	<script>
+     var nb = new XMLHttpRequest();
+     nb.open("GET", "https://beta.grottocenter.org/api/v1/entry/publicCount", false);
+     nb.send(null);
+     document.write(JSON.parse(nb.response).count);
+   </script>
+</span>&nbsp;cavit&eacute;s sont accessibles</p>
+</div>
+</div>
+</div>
+<!--fin du code à coller dans votre page html-->
+</body>
+</html>
