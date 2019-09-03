@@ -88,7 +88,7 @@ along with GrottoCenter.  If not, see <http://www.gnu.org/licenses/>.
                 xhr.onload = function () {
                     document.getElementById('demo').innerHTML = JSON.parse(xhr.responseText).count.toLocaleString();
                 };
-                xhr.open('GET', 'https://beta.grottocenter.org/api/v1/entry/publicCount', true);
+                xhr.open('GET', 'http://beta.grottocenter.org/api/v1/entry/publicCount', true);
                 xhr.setRequestHeader('Accept', 'application/json');
                 xhr.send();
             });
@@ -97,10 +97,10 @@ along with GrottoCenter.  If not, see <http://www.gnu.org/licenses/>.
     <body>
         <aside class="gc-widget">
             <header>
-                <img alt="GrottoCenter" src="https://beta.grottocenter.org/images/logo.svg" height="80">
+                <img alt="GrottoCenter" src="http://beta.grottocenter.org/images/logo.svg" height="80">
             </header>
             <article>
-                <h4>Contribuez à <a href="https://beta.grottocenter.org">Grottocenter</a> la base de donnée spéléo mondiale !</h4>
+                <h4>Contribuez à <a href="http://beta.grottocenter.org">Grottocenter</a> la base de donnée spéléo mondiale !</h4>
                 <p>Déjà <span id="demo"></span> cavités sont accessibles !</p>
             </article>
         </aside>
